@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4d18fa54-264c-40b0-b37d-7a590a7af13e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/config/db.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/private.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware/protect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/private.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/errorResponse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/sendEmail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/assets/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/assets/images/notfound.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Card/CardPhoto.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Footer/Footer.css.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Footer/Footer.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Logo/Logo.css.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Logo/Logo.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Modal/Modal.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Modal/ModalStyles.css.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Navbar/Accessibility.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Navbar/MenuToggle.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Navbar/MobileNavLinks.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Navbar/NavLinks.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Navbar/Navbar.css.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Navbar/Navbar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Slider/Slider.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Slider/SliderStyles.css.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/pages/PageAssetDetails/PageAssetDetails.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/pages/PageAssetDetails/PageAssetDetailscss.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/pages/PageAssets/PageAssets.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/pages/PageGenre/PageCategories.css.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/pages/PageGenre/PageCategories.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/pages/PageHome/PageHome.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/pages/PageLogin/PageLogin.css.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/pages/PageLogin/PageLogin.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/pages/PageNotFound/PageNotFound.css.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/pages/PageNotFound/PageNotFound.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/pages/PagePopular/PagePopular.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/styles/AccessibilityStyles.css.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/styles/GridStyles.css.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/styles/LinkStyles.css.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/styles/MobileStyles.css.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/contexts/PopularContext.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/react-app-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/types/AssetTypes.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/types/Routing.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/utils/fnMenuData.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/src/utils/fnRatingColor.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dmdb/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="24gtb6HUw4A20GDFgDBQwiMOTWo" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4d18fa54-264c-40b0-b37d-7a590a7af13e" name="Changes" comment="" />
+      <created>1644064126256</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1644064126256</updated>
+      <workItem from="1644064127430" duration="12867000" />
+      <workItem from="1644658734174" duration="874000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
