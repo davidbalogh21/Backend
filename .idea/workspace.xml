@@ -5,15 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d18fa54-264c-40b0-b37d-7a590a7af13e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/config/db.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/private.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware/protect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/private.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/errorResponse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/sendEmail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/db.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/private.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/private.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/middleware/protect.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/protect.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/private.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/private.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/errorResponse.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/errorResponse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/sendEmail.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/sendEmail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../dmdb/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../dmdb/README.md" beforeDir="false" />
@@ -85,6 +89,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="24gtb6HUw4A20GDFgDBQwiMOTWo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -112,7 +124,7 @@
       <option name="presentableId" value="Default" />
       <updated>1644064126256</updated>
       <workItem from="1644064127430" duration="12867000" />
-      <workItem from="1644658734174" duration="874000" />
+      <workItem from="1644658734174" duration="11057000" />
     </task>
     <servers />
   </component>
