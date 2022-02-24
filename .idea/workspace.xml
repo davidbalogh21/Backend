@@ -4,75 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d18fa54-264c-40b0-b37d-7a590a7af13e" name="Changes" comment="">
+    <list default="true" id="4d18fa54-264c-40b0-b37d-7a590a7af13e" name="Changes" comment="Update backend with CORS + user details">
+      <change afterPath="$PROJECT_DIR$/controllers/comment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/review.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Comment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Review.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/comment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/review.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/db.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/db.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/private.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/private.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/middleware/protect.js" beforeDir="false" afterPath="$PROJECT_DIR$/middleware/protect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/private.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/private.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/errorResponse.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/errorResponse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/sendEmail.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/sendEmail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/public/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/assets/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/assets/images/notfound.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Card/CardPhoto.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Footer/Footer.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Footer/Footer.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Logo/Logo.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Logo/Logo.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Modal/Modal.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Modal/ModalStyles.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Navbar/Accessibility.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Navbar/MenuToggle.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Navbar/MobileNavLinks.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Navbar/NavLinks.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Navbar/Navbar.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Navbar/Navbar.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Slider/Slider.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/components/Slider/SliderStyles.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/pages/PageAssetDetails/PageAssetDetails.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/pages/PageAssetDetails/PageAssetDetailscss.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/pages/PageAssets/PageAssets.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/pages/PageGenre/PageCategories.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/pages/PageGenre/PageCategories.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/pages/PageHome/PageHome.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/pages/PageLogin/PageLogin.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/pages/PageLogin/PageLogin.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/pages/PageNotFound/PageNotFound.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/pages/PageNotFound/PageNotFound.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/pages/PagePopular/PagePopular.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/styles/AccessibilityStyles.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/styles/GridStyles.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/styles/LinkStyles.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/components/styles/MobileStyles.css.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/contexts/PopularContext.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/react-app-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/reportWebVitals.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/types/AssetTypes.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/types/Routing.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/utils/fnMenuData.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/src/utils/fnRatingColor.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dmdb/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,8 +64,22 @@
       <option name="presentableId" value="Default" />
       <updated>1644064126256</updated>
       <workItem from="1644064127430" duration="12867000" />
-      <workItem from="1644658734174" duration="11057000" />
+      <workItem from="1644658734174" duration="11758000" />
+      <workItem from="1644826291288" duration="597000" />
+      <workItem from="1644924340042" duration="4864000" />
+      <workItem from="1644946814711" duration="3014000" />
+      <workItem from="1645041074468" duration="1666000" />
+      <workItem from="1645442133704" duration="652000" />
+      <workItem from="1645511625175" duration="241000" />
     </task>
+    <task id="LOCAL-00001" summary="Update backend with CORS + user details">
+      <created>1644768983673</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1644768983673</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,5 +99,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update backend with CORS + user details" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update backend with CORS + user details" />
   </component>
 </project>

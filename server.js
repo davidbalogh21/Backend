@@ -13,6 +13,8 @@ app.use(cors());
 
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/private', require('./routes/private'));
+app.use('/api/review', require('./routes/review'));
+app.use('/api/comment', require('./routes/comment'));
 
 // Error handler
 app.use(errorHandler);
