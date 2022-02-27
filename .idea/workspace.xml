@@ -4,15 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d18fa54-264c-40b0-b37d-7a590a7af13e" name="Changes" comment="Update backend with CORS + user details">
-      <change afterPath="$PROJECT_DIR$/controllers/comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/review.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/Comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/Review.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/comment.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/review.js" afterDir="false" />
+    <list default="true" id="4d18fa54-264c-40b0-b37d-7a590a7af13e" name="Changes" comment="Review and comment endpoints">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/comment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/review.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/review.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Comment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Review.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Review.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/review.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/review.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +72,9 @@
       <workItem from="1645041074468" duration="1666000" />
       <workItem from="1645442133704" duration="652000" />
       <workItem from="1645511625175" duration="241000" />
+      <workItem from="1645683491901" duration="137000" />
+      <workItem from="1645860804319" duration="6826000" />
+      <workItem from="1645947388055" duration="8011000" />
     </task>
     <task id="LOCAL-00001" summary="Update backend with CORS + user details">
       <created>1644768983673</created>
@@ -79,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1644768983673</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Review and comment endpoints">
+      <created>1645683521450</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1645683521450</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +113,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update backend with CORS + user details" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update backend with CORS + user details" />
+    <MESSAGE value="Review and comment endpoints" />
+    <option name="LAST_COMMIT_MESSAGE" value="Review and comment endpoints" />
   </component>
 </project>

@@ -10,6 +10,14 @@ const ReviewSchema = new mongoose.Schema({
         type: String,
         required: [true, "Please provide a user id"]
     },
+    username: {
+        type: String,
+        required: [true, "Please provide a username"]
+    },
+    title: {
+        type: String,
+        required: [true, "Please provide a title"]
+    },
     description: {
         type: String,
         required: [true, "Please provide a review"],

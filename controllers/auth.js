@@ -7,10 +7,11 @@ const jwt = require('jsonwebtoken');
 
 exports.register = async (req, res, next) => {
     const {username, email, password} = req.body;
+    const date = Date.now();
 
     try {
         const user = await User.create({
-            username, email, password
+            username, email, password, date
         })
         sendToken(user, 201, res);
     } catch (error) {
@@ -145,6 +146,25 @@ exports.getUser = async (req, res, next) => {
     }
     return res.send(500);
 };
+
+exports.getUserById = async (req, res, next) => {
+    const {user_id} = req.body;
+
+    try {
+        const user = await User.findOne({user_id});
+
+        if (!user) {
+            return next(new ErrorResponse("User not found!", 404));
+        }
+
+        res.status(201).json({
+            success: true,
+            user
+        })
+    } catch (error) {
+        next(error);
+    }
+}
 
 const sendToken = (user, statusCode, res) => {
     const token = user.getSignedToken()
