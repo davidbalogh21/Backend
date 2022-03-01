@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d18fa54-264c-40b0-b37d-7a590a7af13e" name="Changes" comment="Review and comment endpoints">
+    <list default="true" id="4d18fa54-264c-40b0-b37d-7a590a7af13e" name="Changes" comment="Add more fields to reviews and comments">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/comment.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/review.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/review.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Comment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Review.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Review.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/review.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/review.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +70,14 @@
       <workItem from="1645511625175" duration="241000" />
       <workItem from="1645683491901" duration="137000" />
       <workItem from="1645860804319" duration="6826000" />
-      <workItem from="1645947388055" duration="8011000" />
+      <workItem from="1645947388055" duration="8705000" />
+      <workItem from="1646033028199" duration="61000" />
+      <workItem from="1646057738784" duration="1012000" />
+      <workItem from="1646064843263" duration="658000" />
+      <workItem from="1646117670257" duration="3000" />
+      <workItem from="1646135549127" duration="1755000" />
+      <workItem from="1646139791224" duration="599000" />
+      <workItem from="1646159604113" duration="1769000" />
     </task>
     <task id="LOCAL-00001" summary="Update backend with CORS + user details">
       <created>1644768983673</created>
@@ -90,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645683521450</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add more fields to reviews and comments">
+      <created>1645962650348</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1645962650348</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +124,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update backend with CORS + user details" />
     <MESSAGE value="Review and comment endpoints" />
-    <option name="LAST_COMMIT_MESSAGE" value="Review and comment endpoints" />
+    <MESSAGE value="Add more fields to reviews and comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add more fields to reviews and comments" />
   </component>
 </project>

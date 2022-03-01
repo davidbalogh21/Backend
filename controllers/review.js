@@ -46,3 +46,17 @@ exports.getReviewById = async (req, res, next) => {
       next(error);
   }
 };
+
+exports.getReviewsByUserId = async (req, res, next) => {
+    const {id} = req.body;
+
+    try {
+        const reviews = await Review.find({user_id: id});
+        res.status(201).json({
+            success: true,
+            reviews
+        })
+    } catch (error) {
+        next(error);
+    }
+}

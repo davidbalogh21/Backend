@@ -15,13 +15,11 @@ exports.addComment = async (req, res, next) => {
         }
 
         const comment = await Comment.create({
-            user_id, description, username, date
+            user_id, username, description, date
         })
 
         review.comments.push(comment);
         await review.save();
-
-        console.log(review);
 
         res.status(201).json({
             success: true,
