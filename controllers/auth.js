@@ -149,7 +149,7 @@ exports.getUserById = async (req, res, next) => {
     const {user_id} = req.body;
 
     try {
-        const user = await User.findOne({user_id});
+        const user = await User.findOne({_id: user_id});
 
         if (!user) {
             return next(new ErrorResponse("User not found!", 404));
@@ -158,6 +158,55 @@ exports.getUserById = async (req, res, next) => {
         res.status(201).json({
             success: true,
             user
+        })
+    } catch (error) {
+        next(error);
+    }
+}
+
+exports.followUser = async (req, res, next) => {
+    const {user_id, follow_id} = req.body;
+
+    try {
+        const user = await User.findOne({_id: user_id});
+        const followedUser = await User.findOne({_id: follow_id});
+
+        if (!user || !followedUser) {
+            return next(new ErrorResponse("User not found!", 404));
+        }
+
+        const followedUserFound = await user.follows.find(userFindFollowed => userFindFollowed.email == followedUser.email);
+        if (followedUserFound) {
+            user.follows.pop({_id: follow_id});
+        } else {
+            user.follows.push(followedUser);
+        }
+        await user.save();
+
+        res.status(201).json({
+            success: true,
+            user,
+        })
+    } catch (error) {
+        next(error);
+    }
+}
+
+exports.getFollowedBy = async (req, res, next) => {
+    const { user_id } = req.query;
+
+    try {
+        const user = await User.findOne({_id: user_id});
+
+        if (!user) {
+            return next(new ErrorResponse("User not found!", 404));
+        }
+
+        const usersWhoFollow = await User.find({"follows.username": user.username})
+
+        res.status(201).json({
+            success: true,
+            usersWhoFollow
         })
     } catch (error) {
         next(error);

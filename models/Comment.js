@@ -7,11 +7,14 @@ const CommentSchema = new mongoose.Schema({
     },
     username: {
         type: String,
-        required: [true, "Please provide a username"]
+        required: [true, "Please provide a comment username"]
     },
     description: {
         type: String,
         required: [true, "Please provide a review"]
+    },
+    likes: {
+        type: [mongoose.Schema.Types.User]
     },
     date: {
         type: Date,

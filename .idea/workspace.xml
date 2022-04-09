@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d18fa54-264c-40b0-b37d-7a590a7af13e" name="Changes" comment="Add more fields to reviews and comments">
+    <list default="true" id="4d18fa54-264c-40b0-b37d-7a590a7af13e" name="Changes" comment="Get reviews for user and code cleanup">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/comment.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/review.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/review.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Comment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Review.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Review.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/comment.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/review.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/review.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +55,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -77,7 +83,19 @@
       <workItem from="1646117670257" duration="3000" />
       <workItem from="1646135549127" duration="1755000" />
       <workItem from="1646139791224" duration="599000" />
-      <workItem from="1646159604113" duration="1769000" />
+      <workItem from="1646159604113" duration="1824000" />
+      <workItem from="1646652628046" duration="3988000" />
+      <workItem from="1646722297310" duration="1140000" />
+      <workItem from="1646739057127" duration="799000" />
+      <workItem from="1646809683955" duration="243000" />
+      <workItem from="1646823345469" duration="5651000" />
+      <workItem from="1646906724105" duration="110000" />
+      <workItem from="1648283685552" duration="8939000" />
+      <workItem from="1648449313774" duration="34000" />
+      <workItem from="1649140170589" duration="20906000" />
+      <workItem from="1649321980851" duration="6240000" />
+      <workItem from="1649399960214" duration="1935000" />
+      <workItem from="1649490044924" duration="10437000" />
     </task>
     <task id="LOCAL-00001" summary="Update backend with CORS + user details">
       <created>1644768983673</created>
@@ -100,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645962650348</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Get reviews for user and code cleanup">
+      <created>1646165852525</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1646165852525</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +150,7 @@
     <MESSAGE value="Update backend with CORS + user details" />
     <MESSAGE value="Review and comment endpoints" />
     <MESSAGE value="Add more fields to reviews and comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add more fields to reviews and comments" />
+    <MESSAGE value="Get reviews for user and code cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Get reviews for user and code cleanup" />
   </component>
 </project>

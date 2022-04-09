@@ -6,7 +6,7 @@ const crypto = require('crypto');
 const UserSchema = new mongoose.Schema({
     username: {
         type: String,
-        required: [true, "Please provide a username"]
+        required: [true, "Please provide a user username"]
     },
     email: {
         type: String,
@@ -25,6 +25,9 @@ const UserSchema = new mongoose.Schema({
     created: {
         type: Date,
         default:Date.now()
+    },
+    follows: {
+        type: [mongoose.Schema.Types.User]
     },
     resetPasswordToken: String,
     resetPasswordExpire: Date,

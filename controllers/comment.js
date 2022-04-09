@@ -1,4 +1,5 @@
 const Review = require('../models/Review');
+const User = require('../models/User');
 const Comment = require('../models/Comment');
 const {json} = require("express");
 const ErrorResponse = require('../utils/errorResponse');
@@ -13,7 +14,6 @@ exports.addComment = async (req, res, next) => {
         if (!review) {
             return next(new ErrorResponse("Review not found!", 404));
         }
-
         const comment = await Comment.create({
             user_id, username, description, date
         })
@@ -23,6 +23,67 @@ exports.addComment = async (req, res, next) => {
 
         res.status(201).json({
             success: true,
+            review
+        })
+    } catch (error) {
+        next(error);
+    }
+}
+
+exports.getComment = async (req, res, next) => {
+    const {comment_id} = req.query;
+
+    try {
+        const comment = await Comment.findOne({_id: comment_id});
+
+        if (!comment) {
+            return next(new ErrorResponse("Review not found!", 404));
+        }
+
+        res.status(201).json({
+            success: true,
+            comment
+        })
+    } catch (error) {
+        next(error);
+    }
+}
+
+exports.likeComment = async (req, res, next) => {
+    const {comment_id, user_id, review_id} = req.body;
+
+    try {
+        const comment = await Comment.findOne({_id: comment_id});
+        const user = await User.findOne({_id: user_id});
+        const review = await Review.findOne({_id: review_id});
+
+        if (!comment || !user || !review) {
+            return next(new ErrorResponse("Comment or user not found!", 404));
+        }
+
+        const userFound = comment.likes.find(userLike => userLike.email == user.email);
+
+        if (userFound) {
+            comment.likes.pop({_id: user_id});
+        } else {
+            comment.likes.push(user);
+        }
+        await comment.save();
+
+        const commentFound = review.comments.find(commentArray => commentArray?._id == comment_id)
+        console.log(commentFound);
+        const commentUserFound = commentFound.likes.find(userCommentLike => userCommentLike.email == user.email);
+
+        if (commentUserFound) {
+            commentFound.likes.pop({_id: user_id});
+        } else {
+            commentFound.likes.push(user);
+        }
+        await review.save();
+
+        res.status(201).json({
+            success: true,
+            comment,
             review
         })
     } catch (error) {

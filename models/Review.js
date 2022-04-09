@@ -1,5 +1,6 @@
 const mongoose = require('mongoose')
 const Comment = require('../models/Comment');
+const User = require('../models/User');
 
 const ReviewSchema = new mongoose.Schema({
     movie_id: {
@@ -12,7 +13,7 @@ const ReviewSchema = new mongoose.Schema({
     },
     username: {
         type: String,
-        required: [true, "Please provide a username"]
+        required: [true, "Please provide a review username"]
     },
     title: {
         type: String,
@@ -29,6 +30,9 @@ const ReviewSchema = new mongoose.Schema({
     date: {
         type: Date,
         default:Date.now()
+    },
+    likes: {
+        type: [mongoose.Schema.Types.User]
     },
     comments: {
         type: [mongoose.Schema.Types.Comment]
