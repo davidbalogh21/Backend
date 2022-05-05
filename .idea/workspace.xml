@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d18fa54-264c-40b0-b37d-7a590a7af13e" name="Changes" comment="Get reviews for user and code cleanup">
+    <list default="true" id="4d18fa54-264c-40b0-b37d-7a590a7af13e" name="Changes" comment="Like and follow">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/comment.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/review.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/review.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Comment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/Review.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Review.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/comment.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/review.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/review.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +89,19 @@
       <workItem from="1649140170589" duration="20906000" />
       <workItem from="1649321980851" duration="6240000" />
       <workItem from="1649399960214" duration="1935000" />
-      <workItem from="1649490044924" duration="10437000" />
+      <workItem from="1649490044924" duration="11185000" />
+      <workItem from="1649656993826" duration="5000" />
+      <workItem from="1649657367922" duration="6000" />
+      <workItem from="1650120963442" duration="339000" />
+      <workItem from="1650787336495" duration="1391000" />
+      <workItem from="1650866819464" duration="14000" />
+      <workItem from="1651058767287" duration="617000" />
+      <workItem from="1651127345766" duration="1585000" />
+      <workItem from="1651155952460" duration="2132000" />
+      <workItem from="1651212389046" duration="3483000" />
+      <workItem from="1651470208892" duration="12000" />
+      <workItem from="1651656366007" duration="2953000" />
+      <workItem from="1651732311997" duration="2306000" />
     </task>
     <task id="LOCAL-00001" summary="Update backend with CORS + user details">
       <created>1644768983673</created>
@@ -125,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646165852525</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Like and follow">
+      <created>1649512603591</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1649512603591</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +164,7 @@
     <MESSAGE value="Review and comment endpoints" />
     <MESSAGE value="Add more fields to reviews and comments" />
     <MESSAGE value="Get reviews for user and code cleanup" />
-    <option name="LAST_COMMIT_MESSAGE" value="Get reviews for user and code cleanup" />
+    <MESSAGE value="Like and follow" />
+    <option name="LAST_COMMIT_MESSAGE" value="Like and follow" />
   </component>
 </project>

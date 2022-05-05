@@ -11,7 +11,7 @@ const CommentSchema = new mongoose.Schema({
     },
     description: {
         type: String,
-        required: [true, "Please provide a review"]
+        required: [true, "Please provide a description"]
     },
     likes: {
         type: [mongoose.Schema.Types.User]

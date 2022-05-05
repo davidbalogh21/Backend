@@ -3,6 +3,7 @@ const User = require('../models/User');
 const {json} = require("express");
 const ErrorResponse = require('../utils/errorResponse');
 const mongoose = require('mongoose');
+const jwt = require('jsonwebtoken');
 
 exports.addReview = async (req, res, next) => {
     const {movie_id, user_id, description, rating, title, username} = req.body;
@@ -91,5 +92,48 @@ exports.likeReview = async (req, res, next) => {
         })
     } catch (error) {
         next(error);
+    }
+}
+
+exports.getFeed = async (req, res, next) => {
+    let feedReviews = []
+    if (req.headers && req.headers.authorization) {
+        var token = req.headers.authorization.split(' ')[1],
+            decoded;
+
+        try {
+            decoded = jwt.verify(token, process.env.JWT_SECRET);
+        } catch (e) {
+            return res.status(401).send(`unauthorized ${e.message}`);
+        }
+        const user = await User.findById(decoded.id)
+
+        if (user) {
+            for (const followedUser of user.follows) {
+                const reviews = await Review.find({user_id: followedUser._id});
+                feedReviews.push(reviews);
+            }
+        }
+    const mergedFeed = [].concat.apply([], feedReviews);
+    const sortCriteria = (a, b) => a.date > b.date ? 1 : -1;
+        mergedFeed.sort(sortCriteria);
+        res.status(201).json({
+            success: true,
+            feedReviews: mergedFeed
+        })
+    }
+}
+
+exports.getTrendingFeed = async (req, res, next) => {
+    const sortCriteria = (a, b) => a.likes.length + 2 * a.comments.length < b.likes.length + 2 * b.comments.length ? 1 : -1;
+    try {
+        const allReviews = await Review.find();
+        const feedReviews = allReviews.sort(sortCriteria);
+        res.status(200).json({
+            success: true,
+            feedReviews
+        })
+    } catch (e){
+        next(e);
     }
 }
