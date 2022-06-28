@@ -3,10 +3,12 @@ const User = require('../models/User');
 const Comment = require('../models/Comment');
 const {json} = require("express");
 const ErrorResponse = require('../utils/errorResponse');
+const axios = require("axios");
 
 exports.addComment = async (req, res, next) => {
     const {review_id, user_id, description, username} = req.body;
     const date = Date.now();
+    let sentimentScore;
 
     try {
         const review = await Review.findOne({_id: review_id});
@@ -14,8 +16,29 @@ exports.addComment = async (req, res, next) => {
         if (!review) {
             return next(new ErrorResponse("Review not found!", 404));
         }
+
+        const encodedParams = new URLSearchParams();
+        encodedParams.append("text", description);
+
+        const options = {
+            method: 'POST',
+            url: 'https://twinword-sentiment-analysis.p.rapidapi.com/analyze/',
+            headers: {
+                'content-type': 'application/x-www-form-urlencoded',
+                'X-RapidAPI-Host': 'twinword-sentiment-analysis.p.rapidapi.com',
+                'X-RapidAPI-Key': 'a6e87e67d2mshedea7b428036209p1627a4jsnc539d1a1828e'
+            },
+            data: encodedParams
+        };
+
+        await axios.request(options).then(function (response) {
+            sentimentScore = response.data.score;
+        }).catch(function (error) {
+            console.error(error);
+        });
+
         const comment = await Comment.create({
-            user_id, username, description, date
+            user_id, username, sentimentScore, description, date
         })
 
         review.comments.push(comment);

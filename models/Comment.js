@@ -16,6 +16,9 @@ const CommentSchema = new mongoose.Schema({
     likes: {
         type: [mongoose.Schema.Types.User]
     },
+    sentimentScore:{
+        type: Number
+    },
     date: {
         type: Date,
         default:Date.now()

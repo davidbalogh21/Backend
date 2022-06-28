@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4d18fa54-264c-40b0-b37d-7a590a7af13e" name="Changes" comment="Like and follow">
+    <list default="true" id="4d18fa54-264c-40b0-b37d-7a590a7af13e" name="Changes" comment="feed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/comment.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/review.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/review.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/Comment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/review.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/review.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Frontend/dmdb/src/components/components/RecommendationSlider/RecommendationSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../Frontend/dmdb/src/components/components/RecommendationSlider/RecommendationSlider.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +106,31 @@
       <workItem from="1651212389046" duration="3483000" />
       <workItem from="1651470208892" duration="12000" />
       <workItem from="1651656366007" duration="2953000" />
-      <workItem from="1651732311997" duration="2306000" />
+      <workItem from="1651732311997" duration="2796000" />
+      <workItem from="1652173977618" duration="755000" />
+      <workItem from="1652255317746" duration="1428000" />
+      <workItem from="1652336502092" duration="39000" />
+      <workItem from="1652518780643" duration="3666000" />
+      <workItem from="1653041940681" duration="406000" />
+      <workItem from="1653204520373" duration="4000" />
+      <workItem from="1653204532397" duration="5322000" />
+      <workItem from="1653284403022" duration="14000" />
+      <workItem from="1653379386396" duration="1281000" />
+      <workItem from="1653457829554" duration="598000" />
+      <workItem from="1653732757813" duration="7637000" />
+      <workItem from="1653891047118" duration="62000" />
+      <workItem from="1655106277987" duration="2651000" />
+      <workItem from="1655181969759" duration="41000" />
+      <workItem from="1655392976089" duration="2150000" />
+      <workItem from="1655536809606" duration="1987000" />
+      <workItem from="1655822950504" duration="1367000" />
+      <workItem from="1655882848963" duration="688000" />
+      <workItem from="1655898702304" duration="77000" />
+      <workItem from="1655966454748" duration="9000" />
+      <workItem from="1656347443857" duration="2521000" />
+      <workItem from="1656395816100" duration="10000" />
+      <workItem from="1656432950953" duration="5000" />
+      <workItem from="1656433008550" duration="782000" />
     </task>
     <task id="LOCAL-00001" summary="Update backend with CORS + user details">
       <created>1644768983673</created>
@@ -138,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649512603591</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feed">
+      <created>1651744539891</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1651744539891</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +201,7 @@
     <MESSAGE value="Add more fields to reviews and comments" />
     <MESSAGE value="Get reviews for user and code cleanup" />
     <MESSAGE value="Like and follow" />
-    <option name="LAST_COMMIT_MESSAGE" value="Like and follow" />
+    <MESSAGE value="feed" />
+    <option name="LAST_COMMIT_MESSAGE" value="feed" />
   </component>
 </project>
