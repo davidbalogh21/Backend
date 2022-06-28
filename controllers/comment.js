@@ -26,7 +26,7 @@ exports.addComment = async (req, res, next) => {
             headers: {
                 'content-type': 'application/x-www-form-urlencoded',
                 'X-RapidAPI-Host': 'twinword-sentiment-analysis.p.rapidapi.com',
-                'X-RapidAPI-Key': 'a6e87e67d2mshedea7b428036209p1627a4jsnc539d1a1828e'
+                'X-RapidAPI-Key': process.env.API_KEY,
             },
             data: encodedParams
         };
